@@ -1,8 +1,0 @@
-# Commands to create repo and push (use gh CLI)
-gh auth login
-cd qa-automation-playwright-py_recreated
-git init
-git add .
-git commit -m "Initial commit - QA automation starter"
-gh repo create mtgr18977/qa-automation-playwright-py_recreated --public --source=. --remote=origin --push
-gh repo view mtgr18977/qa-automation-playwright-py_recreated --web
