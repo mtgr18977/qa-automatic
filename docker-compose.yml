@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  tests:
+    build: .
+    environment:
+      - API_BASE=${API_BASE:-https://httpbin.org}
+      - BASE_URL=${BASE_URL:-https://example.com}
+    volumes:
+      - ./:/app
+    command: pytest -q
